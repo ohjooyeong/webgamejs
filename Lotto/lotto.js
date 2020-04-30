@@ -8,6 +8,7 @@ console.log(후보군);
 
 var 셔플 = [];
 while (후보군.length > 0) {
+    // 랜덤한 배열의 인덱스값을 삭제 및 그 값을 이동값에 넣어주는 것
     var 이동값 = 후보군.splice(Math.floor(Math.random() * 후보군.length), 1)[0];
     셔플.push(이동값);
 }
