@@ -58,24 +58,13 @@ function 공색칠하기(num, res) {
     res.appendChild(공);
 }
 
-setTimeout(function callback() {
-    공색칠하기(당첨숫자들[0], res);
-}, 1000);
-setTimeout(function callback() {
-    공색칠하기(당첨숫자들[1], res);
-}, 2000);
-setTimeout(function callback() {
-    공색칠하기(당첨숫자들[2], res);
-}, 3000);
-setTimeout(function callback() {
-    공색칠하기(당첨숫자들[3], res);
-}, 4000);
-setTimeout(function callback() {
-    공색칠하기(당첨숫자들[4], res);
-}, 5000);
-setTimeout(function callback() {
-    공색칠하기(당첨숫자들[5], res);
-}, 6000);
+for (var i = 0; i < 당첨숫자들.length; i++) {
+    (function closure(j) {
+        setTimeout(function callback() {
+            공색칠하기(당첨숫자들[j], res);
+        }, (j + 1) * 1000);
+    })(i);
+}
 
 setTimeout(function callback() {
     var 칸 = document.querySelector(".bonus");
