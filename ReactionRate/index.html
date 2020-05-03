@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        #screen {
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            user-select: none;
+            font-weight: bold;
+        }
+        #screen.waiting {
+            background-color: aqua;
+        }
+        #screen.ready {
+            background-color: red;
+            color: white;
+        }
+        #screen.now {
+            background-color: rgb(47, 255, 47);
+        }
+    </style>
+    <body>
+        <div id="screen" class="waiting">클릭해서 시작하세요</div>
+    </body>
+    <script src="reactRate.js"></script>
+</html>
