@@ -2,7 +2,7 @@ var 가로 = 4;
 var 세로 = 3;
 var 색깔들 = ["red", "red", "orange", "orange", "green", "green", "yellow", "yellow", "white", "white", "pink", "pink"];
 // 숫자 문자 boolean 은 다음 변수의 값 대입해도 안바뀐다.
-// 객체, 배열은 다음 변수의 값을 대입하면 바뀐다. 참조 라고 함. 객체는 대입하면 참조관계
+// 객체, 배열은 다음 변수의 값을 대입하면 바뀐다. 참조라고 함. 객체는 대입하면 참조관계가 된다.
 
 var 색깔후보 = 색깔들.slice();
 var 색깔 = [];
