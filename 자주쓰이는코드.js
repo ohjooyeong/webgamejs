@@ -114,3 +114,10 @@ function Card(name, att, hp) {
 Card.prototype = 프로토타입;
 
 var joo = new Card("oh", 5, 10);
+
+// 0 ~ 숫자-1 까지 쉽게 배열로 하는법 [0, 1, 2, 3, ..., 숫자-1]
+[...Array(숫자).keys()];
+
+// 조건을 걸고 0 ~ 숫자 까지쉽게 배열로 하는법
+// [1, 2, 3, 4, ..., 숫자]
+[...Array(숫자).keys()].map((v) => v + 1);
